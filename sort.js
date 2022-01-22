@@ -14,3 +14,14 @@ function kNumber() {
   );
   console.log(answer);
 }
+
+function bigNumber() {
+  var numbers = [3, 30, 34, 5, 9];
+  var answer = numbers
+    .map((c) => c + "")
+    .sort((a, b) => b + a - (a + b))
+    .join("");
+
+  answer[0] === "0" ? "0" : answer;
+  console.log(answer);
+}
