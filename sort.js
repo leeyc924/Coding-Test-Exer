@@ -25,3 +25,19 @@ function bigNumber() {
   answer[0] === "0" ? "0" : answer;
   console.log(answer);
 }
+
+function hIndex() {
+  var citations = [3,0,6,1,5];
+
+  var sortCitations = citations.sort((a, b) => b - a);
+  var answer = 0;
+  for (let index = 0; index < sortCitations.length; index++) {
+    const citation = sortCitations[index];
+    if (citation <= index) {
+      break;
+    }
+    answer += 1;
+  }
+
+  console.log(answer);
+}
