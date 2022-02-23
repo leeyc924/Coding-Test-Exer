@@ -25,3 +25,12 @@ function mockTest() {
 
   console.log(answer);
 }
+
+function primeNumber() {
+  var numbers = "011";
+
+  
+  var answer = 0;
+
+  console.log(answer);
+}
